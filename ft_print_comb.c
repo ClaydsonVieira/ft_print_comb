@@ -12,8 +12,6 @@ int main(int argc,char *argv[]){
 }
 
 void ft_print_comb(){
-	/*cria um vetor de 10 posições e uma variável temporária 
-	a ser passada por parâmetro */
 
     //variáveis usadas para armazenar as unidades, centenas e dezenas
     int un, dez, cent;
@@ -23,7 +21,7 @@ void ft_print_comb(){
     //variável de controle
     int imprimir;
 
-	//preenche um vetor de 10 posições
+	//laço de 0 a 999
 	for(int i = 0; i < 1000; i++){
         //armazena as unidades, dezenas e centenas do número
         un = i % 10; //armazena as unidades
@@ -57,10 +55,6 @@ void ft_print_comb(){
                 printf("%d", dez);
                 printf("%d, ", un);
             }
-
-        }
-       
-        
+        } 
     }
-    
 }
